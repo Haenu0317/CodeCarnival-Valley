@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.haenu</groupId>
+    <artifactId>codeCarnival-subject</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>编程狂欢谷-题目领域服务</description>
+
+    <modules>
+        <module>codeCarnival-subject-api</module>
+        <module>codeCarnival-application</module>
+        <module>codeCarnival-domain</module>
+        <module>codeCarnival-common</module>
+        <module>codeCarnival-infra</module>
+        <module>codeCarnival-starter</module>
+        <module>codeCarnival-application/codeCarnival-application-controller</module>
+        <module>codeCarnival-application/codeCarnival-application-job</module>
+        <module>codeCarnival-application/codeCarnival-application-mq</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>2.4.2</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/contenet/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
