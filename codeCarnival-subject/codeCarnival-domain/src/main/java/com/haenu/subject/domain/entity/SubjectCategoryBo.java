@@ -1,4 +1,4 @@
-package com.haenu.subject.infra.basic.entity;
+package com.haenu.subject.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -15,7 +15,7 @@ import java.util.Date;
  */
 @TableName(value ="subject_category")
 @Data
-public class SubjectCategory implements Serializable {
+public class SubjectCategoryBo implements Serializable {
     /**
      * 主键
      */

@@ -11,5 +11,17 @@
 
     <artifactId>codeCarnival-domain</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.haenu</groupId>
+            <artifactId>codeCarnival-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.haenu</groupId>
+            <artifactId>codeCarnival-infra</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
